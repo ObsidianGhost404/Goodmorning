@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NoScope — Creative Developer</title>
+  <meta name="description" content="Portfolio of NoScope — building immersive digital experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="loader" id="loader"><div class="loader__bar"><span></span></div><p class="loader__text">LOADING EXPERIENCE</p></div>
+  <div class="cursor" id="cursor"></div><div class="cursor-ring" id="cursorRing"></div>
+  <div class="bg-glow bg-glow--1"></div><div class="bg-glow bg-glow--2"></div><div class="grain"></div>
+
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo" data-magnetic><span class="nav__dot"></span>NoScope<span class="accent">.</span></a>
+    <nav class="nav__links"><a href="#about">About</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+    <a href="#contact" class="btn btn--small" data-magnetic>Let's talk</a>
+    <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu"><a href="#about">About</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+
+  <main id="top">
+    <section class="hero">
+      <canvas id="hero-canvas"></canvas>
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal"><span class="pulse"></span> Available for new projects</p>
+        <h1 class="hero__title">
+          <span class="line"><span class="reveal-text">Crafting</span></span>
+          <span class="line"><span class="reveal-text gradient-text">digital worlds</span></span>
+          <span class="line"><span class="reveal-text">that feel alive.</span></span>
+        </h1>
+        <p class="hero__sub reveal">I'm <strong>NoScope</strong> — a developer & designer blending code, motion and 3D into experiences people remember.</p>
+        <div class="hero__actions reveal">
+          <a href="#work" class="btn btn--primary" data-magnetic>View my work <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+          <a href="#contact" class="btn btn--ghost" data-magnetic>Get in touch</a>
+        </div>
+      </div>
+      <div class="hero__scroll"><span></span> scroll</div>
+    </section>
+
+    <div class="marquee"><div class="marquee__track">
+      <span>Web Development</span><i>✦</i><span>3D Experiences</span><i>✦</i><span>UI / UX Design</span><i>✦</i><span>Motion</span><i>✦</i><span>Creative Coding</span><i>✦</i>
+      <span>Web Development</span><i>✦</i><span>3D Experiences</span><i>✦</i><span>UI / UX Design</span><i>✦</i><span>Motion</span><i>✦</i><span>Creative Coding</span><i>✦</i>
+    </div></div>
+
+    <section class="section about" id="about">
+      <div class="section__head"><span class="section__num">01</span><h2 class="section__title reveal">About <span class="gradient-text">me</span></h2></div>
+      <div class="bento">
+        <article class="bento__card bento__card--wide glass reveal" data-tilt><h3>Turning ideas into immersive interfaces.</h3><p>I design and build websites that go beyond the ordinary — combining clean engineering with expressive visuals, smooth motion and real-time 3D. Every pixel has a purpose, every interaction tells a story.</p></article>
+        <article class="bento__card glass stat reveal" data-tilt><span class="stat__num" data-count="3">0</span><span class="stat__plus">+</span><p>Years of experience</p></article>
+        <article class="bento__card glass stat reveal" data-tilt><span class="stat__num" data-count="25">0</span><span class="stat__plus">+</span><p>Projects shipped</p></article>
+        <article class="bento__card glass reveal" data-tilt><h4>Based in</h4><p class="big">Earth 🌍</p></article>
+        <article class="bento__card bento__card--gradient reveal" data-tilt><h4>Currently</h4><p class="big">Open to freelance & collaborations</p><a href="#contact" class="link-arrow">Say hello →</a></article>
+      </div>
+    </section>
+
+    <section class="section work" id="work">
+      <div class="section__head"><span class="section__num">02</span><h2 class="section__title reveal">Selected <span class="gradient-text">work</span></h2></div>
+      <div class="projects">
+        <a href="#" target="_blank" rel="noopener" class="project reveal" data-tilt><div class="project__visual" style="--g1:#7c3aed;--g2:#06b6d4"><span class="project__index">01</span></div><div class="project__info"><h3>Project One</h3><p>Short description of what this project is and the problem it solves.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div></div></a>
+        <a href="#" target="_blank" rel="noopener" class="project reveal" data-tilt><div class="project__visual" style="--g1:#ec4899;--g2:#f97316"><span class="project__index">02</span></div><div class="project__info"><h3>Project Two</h3><p>Short description of what this project is and the problem it solves.</p><div class="tags"><span>React</span><span>Three.js</span></div></div></a>
+        <a href="#" target="_blank" rel="noopener" class="project reveal" data-tilt><div class="project__visual" style="--g1:#22d3ee;--g2:#a3e635"><span class="project__index">03</span></div><div class="project__info"><h3>Project Three</h3><p>Short description of what this project is and the problem it solves.</p><div class="tags"><span>Node.js</span><span>API</span></div></div></a>
+        <a href="#" target="_blank" rel="noopener" class="project reveal" data-tilt><div class="project__visual" style="--g1:#f43f5e;--g2:#8b5cf6"><span class="project__index">04</span></div><div class="project__info"><h3>Project Four</h3><p>Short description of what this project is and the problem it solves.</p><div class="tags"><span>Design</span><span>Figma</span></div></div></a>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section__head"><span class="section__num">03</span><h2 class="section__title reveal">Tools & <span class="gradient-text">skills</span></h2></div>
+      <div class="skills__grid"><div class="skill glass reveal"><span>HTML5</span></div><div class="skill glass reveal"><span>CSS3</span></div><div class="skill glass reveal"><span>JavaScript</span></div><div class="skill glass reveal"><span>Three.js</span></div><div class="skill glass reveal"><span>Node.js</span></div><div class="skill glass reveal"><span>React</span></div><div class="skill glass reveal"><span>Git</span></div><div class="skill glass reveal"><span>Figma</span></div><div class="skill glass reveal"><span>Python</span></div><div class="skill glass reveal"><span>UI / UX</span></div></div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact__card reveal"><div class="contact__glow"></div><span class="section__num">04</span><h2>Have an idea?<br /><span class="gradient-text">Let's build it.</span></h2><a href="mailto:you@example.com" class="contact__email" data-magnetic>you@example.com</a><div class="socials"><a href="https://github.com/noscope06" target="_blank" rel="noopener" data-magnetic>GitHub</a><a href="#" target="_blank" rel="noopener" data-magnetic>LinkedIn</a><a href="#" target="_blank" rel="noopener" data-magnetic>Twitter / X</a><a href="#" target="_blank" rel="noopener" data-magnetic>Instagram</a></div></div>
+    </section>
+  </main>
+
+  <footer class="footer"><p>© <span id="year"></span> NoScope. Designed & built with obsession.</p><a href="#top" class="footer__top" data-magnetic>Back to top ↑</a></footer>
+
+  <script type="importmap">{ "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js" } }</script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
